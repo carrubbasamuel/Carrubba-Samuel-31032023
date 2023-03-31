@@ -2,49 +2,197 @@
   Fornito il seguente oggetto, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-const me = {
-  name: 'Joh',
-  lastName: 'Doe',
-  skills: ['javascript', 'html', 'css'],
-}
+
+// const me = {
+//   name: 'Joh',
+//   lastName: 'Doe',
+//   skills: ['javascript', 'html', 'css'],
+// }
+
+
+// let removeLastElement = me.skills.pop();
+
+// console.log(removeLastElement);
+// console.log(me);
+
 
 /* ESERCIZIO 2
   Scrivi del codice per creare un array di soli valori DISPARI da 1 a 100.
  */
 
+
+  // let array = [];
+  // for(let i=0; i<=100; i++){
+  //   if( i % 2 )array.push(i);
+  // }
+  // console.log(array);
+  
+
 /* ESERCIZIO 3
   Scrivi del codice per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
- */
+*/
+
+// let array = [];
+// for(let i= 0; i<= 10; i++){
+//   array.push(parseInt(Math.random() * 100));
+// }
+// console.log(array);
+
 
 /* ESERCIZIO 4
   Scrivi del codice per ricavare solamente i valori PARI da un array composto da soli valori numerici.
  */
 
+
+  // let array = [];
+  // let arrayPari = [];
+
+
+  // for(let i= 0; i<= 50; i++){
+  //   let randomNumber = parseInt(Math.random() * 100);
+  //   array.push(randomNumber);
+  //   if(!(randomNumber % 2)){
+  //     arrayPari.push(randomNumber);
+  //   }
+  // }
+  // console.log(array);
+  // console.log(arrayPari);
+
+ 
+
+
+
 /* ESERCIZIO 5
   Scrivi del codice per sommare a catena i numeri contenuti in un array.
  */
+
+
+// let array = [];
+// let itemAdd = 0;
+
+// for(let i= 0; i<= 5; i++){
+//   let randomNumber = parseInt(Math.random() * 100);
+//   array.push(randomNumber);
+//   itemAdd += array[i];
+// }
+
+
+// console.log(array);
+// console.log("La somma degli elementi è:   " + itemAdd);
+
+
+
 
 /* ESERCIZIO 6
   Scrivi del codice per incrementare di 1 tutti i valori numerici in un array.
 */
 
+// let array = [];
+// let arrayTwo = [];
+
+// for(let i= 0; i<= 5; i++){
+//   let randomNumber = parseInt(Math.random() * 100);
+//   let n = randomNumber+1;
+//   array.push(randomNumber);
+//   arrayTwo.push(n);
+// }
+
+
+// console.log(array);
+// console.log(arrayTwo);
+
+
+
+
+
 /* ESERCIZIO 7 (EXTRA)
   Scrivi del codice per eliminare solo i valori PARI da un array.
 */
 
+
+//---------CON ARRAY CASUALE
+
+// let array = [];
+// let arrayTwo = []
+
+// for(let i= 0; i<= 1000; i++){
+//   let randomNumber = parseInt(Math.random() * 100);
+//   array.push(randomNumber); 
+//   arrayTwo.push(randomNumber)
+//   if(!(array[i] % 2)){
+//     array.pop();
+//   }
+// }
+
+// console.log(array);
+// console.log(arrayTwo);
+
+
+//-------------------CON ARRAY DEFINITO
+
+// let array = [2, 2, 5, 7, 4, 6];
+// console.log(array);
+
+
+
+// for(let i=0; i <= array.length; i++){
+//   if(array[i]%2 === 0){
+//     array.splice(i,1);
+//     i--;
+//   }
+// }
+
+
+// console.log(array);
+
+
+
 /* ESERCIZIO 8
   Scrivi del codice per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 10 (incluso), SENZA AMMETTERE DUPLICATI.
  */
+
+// let array = [];
+
+// for(let i=0; i<= 10; i++){
+//   let randomNumber=parseInt(Math.random() * 10+1);
+//   if(!array.includes(randomNumber)){
+//     array.push(randomNumber);
+//    i--
+//   }
+// }
+
+// console.log(array);
 
 /* ESERCIZIO 9
   Sostituisci ogni stringa contenuta in un array con un numero rappresentante la sua lunghezza.
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
+// let array = ["EPICODE", "is", "great", "Maurizio" ];
+
+// for(let i=0; i< array.length; i++){
+//   let numberOfLetter = array[i].length;
+//   array.splice(i, 1, numberOfLetter);
+// }
+
+// console.log(array);
+
+
+
 /* ESERCIZIO 10
   Scrivi un algoritmo in grado di invertire un array.
   es: [1, 3, 5] ==> [5, 3, 1]
 */
+let array = ["EPICODE", "is", "great", "Maurizio" ];
+let arrayInverse = [];
+console.log(array);
+
+for (let i of array){
+  let element = array.slice();
+  arrayInverse.push(element);
+}
+
+console.log(arrayInverse);
 
 /* ESERCIZIO 11
   Scrivi del codice per estrarre il massimo valore numerico da un array.
