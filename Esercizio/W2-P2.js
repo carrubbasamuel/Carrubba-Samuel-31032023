@@ -8,29 +8,27 @@
 //   lastName: 'Doe',
 //   skills: ['javascript', 'html', 'css'],
 // }
-
-
 // let removeLastElement = me.skills.pop();
-
 // console.log(removeLastElement);
 // console.log(me);
 
 
 /* ESERCIZIO 2
   Scrivi del codice per creare un array di soli valori DISPARI da 1 a 100.
- */
+*/
 
 
-  // let array = [];
-  // for(let i=0; i<=100; i++){
-  //   if( i % 2 )array.push(i);
-  // }
-  // console.log(array);
+// let array = [];
+// for(let i=0; i<=100; i++){
+//   if( i % 2 )array.push(i);
+// }
+// console.log(array);
   
 
 /* ESERCIZIO 3
   Scrivi del codice per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
+
 
 // let array = [];
 // for(let i= 0; i<= 10; i++){
@@ -39,24 +37,23 @@
 // console.log(array);
 
 
+
 /* ESERCIZIO 4
   Scrivi del codice per ricavare solamente i valori PARI da un array composto da soli valori numerici.
- */
+*/
 
 
-  // let array = [];
-  // let arrayPari = [];
-
-
-  // for(let i= 0; i<= 50; i++){
-  //   let randomNumber = parseInt(Math.random() * 100);
-  //   array.push(randomNumber);
-  //   if(!(randomNumber % 2)){
-  //     arrayPari.push(randomNumber);
-  //   }
-  // }
-  // console.log(array);
-  // console.log(arrayPari);
+// let array = [];
+// let arrayPari = [];
+// for(let i= 0; i<= 50; i++){
+//   let randomNumber = parseInt(Math.random() * 100);
+//   array.push(randomNumber);
+//   if(!(randomNumber % 2)){
+//     arrayPari.push(randomNumber);
+//   }
+// }
+// console.log(array);
+// console.log(arrayPari);
 
  
 
@@ -64,19 +61,17 @@
 
 /* ESERCIZIO 5
   Scrivi del codice per sommare a catena i numeri contenuti in un array.
- */
+*/
+
 
 
 // let array = [];
 // let itemAdd = 0;
-
 // for(let i= 0; i<= 5; i++){
 //   let randomNumber = parseInt(Math.random() * 100);
 //   array.push(randomNumber);
 //   itemAdd += array[i];
 // }
-
-
 // console.log(array);
 // console.log("La somma degli elementi è:   " + itemAdd);
 
@@ -87,21 +82,18 @@
   Scrivi del codice per incrementare di 1 tutti i valori numerici in un array.
 */
 
+
+
 // let array = [];
 // let arrayTwo = [];
-
 // for(let i= 0; i<= 5; i++){
 //   let randomNumber = parseInt(Math.random() * 100);
 //   let n = randomNumber+1;
 //   array.push(randomNumber);
 //   arrayTwo.push(n);
 // }
-
-
 // console.log(array);
 // console.log(arrayTwo);
-
-
 
 
 
@@ -114,7 +106,6 @@
 
 // let array = [];
 // let arrayTwo = []
-
 // for(let i= 0; i<= 1000; i++){
 //   let randomNumber = parseInt(Math.random() * 100);
 //   array.push(randomNumber); 
@@ -123,7 +114,6 @@
 //     array.pop();
 //   }
 // }
-
 // console.log(array);
 // console.log(arrayTwo);
 
@@ -132,17 +122,12 @@
 
 // let array = [2, 2, 5, 7, 4, 6];
 // console.log(array);
-
-
-
 // for(let i=0; i <= array.length; i++){
 //   if(array[i]%2 === 0){
 //     array.splice(i,1);
 //     i--;
 //   }
 // }
-
-
 // console.log(array);
 
 
@@ -151,30 +136,32 @@
   Scrivi del codice per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 10 (incluso), SENZA AMMETTERE DUPLICATI.
  */
 
-// let array = [];
 
+
+// let array = [];
 // for(let i=0; i<= 10; i++){
 //   let randomNumber=parseInt(Math.random() * 10+1);
 //   if(!array.includes(randomNumber)){
-//     array.push(randomNumber);
+//    array.push(randomNumber);
 //    i--
 //   }
 // }
-
 // console.log(array);
+
+
 
 /* ESERCIZIO 9
   Sostituisci ogni stringa contenuta in un array con un numero rappresentante la sua lunghezza.
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
-// let array = ["EPICODE", "is", "great", "Maurizio" ];
 
+
+// let array = ["EPICODE", "is", "great", "Maurizio" ];
 // for(let i=0; i< array.length; i++){
 //   let numberOfLetter = array[i].length;
 //   array.splice(i, 1, numberOfLetter);
 // }
-
 // console.log(array);
 
 
@@ -185,35 +172,32 @@
 */
 
 
+
 // let array = ["EPICODE", "is", "great", "Maurizio","Sara", 15, "Javascript"];
 // let arrayInverse = [];
-
 // console.log(array);
-
 // for (let i=0; i <= array.length; i++){
-  
 //   if( i !== 0 ){ 
 //     let element = array[ array.length-i ];
-
 //     arrayInverse.push( element );
 //   }
 // }
-
-
 // console.log(arrayInverse);
+
+
 
 /* ESERCIZIO 11
   Scrivi del codice per estrarre il massimo valore numerico da un array.
 */
 
+
+
 // let array = [12,123,3,45,79,180, 18];
 // console.log(array);
 // let maxValue = 0;
-
 // for (let element of array) {
 //   if(element > maxValue) maxValue=element;
 // }
-
 // console.log("Il valore più grande è:  ", maxValue);
 
 
@@ -340,15 +324,13 @@ const movies = [
 */
 
 
+
+
 // let oldYearFilm = 0;
-
-
 //  for (let i=0; i<movies.length; i++) {
 //   let yearFilm = parseInt(movies[i].Year);
 //   if(oldYearFilm < yearFilm)oldYearFilm = yearFilm;
 //  }
-
-
 //  console.log(oldYearFilm);
 
 
@@ -359,35 +341,41 @@ const movies = [
 */
 
 
-
 // let numberOfFilm = 0;
 // let i=0; 
-
 // while(i<movies.length){
 //   if(movies[i].Type==="movie")numberOfFilm++;
 //   i++;
 // }
-
 // console.log(numberOfFilm);
+
+
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
-// let array = [];
 
+
+
+// let array = [];
 // for(let i=0; i < movies.length; i++){
 //   let name = movies[i].Title;
 //   array.push(name);
 // }
-
 // console.log(array);
+
+
+
 
 /* ESERCIZIO 15
   Scrivi del codice per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
-// let array = [];
 
+
+
+
+// let array = [];
 // for (let i=0; i<movies.length; i++) {
 //   if(parseInt(movies[i].Year) > 2000){
 //     array.push({
@@ -396,8 +384,6 @@ const movies = [
 //     });
 //   }
 // }
-
-
 // console.log(array);
 
 
@@ -419,23 +405,25 @@ const movies = [
   Scrivi del codice per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
 
+
+
 // let yearAdd = 0;
 // for(let i=0; i<movies.length; i++){
 //   yearAdd += parseInt(movies[i].Year);
 // }
-
 // console.log(yearAdd);
+
+
+
 
 /* ESERCIZIO 18
   Scrivi del codice per recuperare tutti i film dall'array fornito che contengono una parola fornita.
 */
+
+
+
 // let array = [];
-
 // for(let i=0; i<movies.length; i++){
-  
 //   if(movies[i].Title.includes(':'))array.push(movies[i].Title);
-
 // }
-
-
 // console.log(array);
