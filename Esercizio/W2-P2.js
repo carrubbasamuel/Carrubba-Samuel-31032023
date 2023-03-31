@@ -183,20 +183,41 @@
   Scrivi un algoritmo in grado di invertire un array.
   es: [1, 3, 5] ==> [5, 3, 1]
 */
-let array = ["EPICODE", "is", "great", "Maurizio" ];
-let arrayInverse = [];
-console.log(array);
 
-for (let i of array){
-  let element = array.slice();
-  arrayInverse.push(element);
-}
 
-console.log(arrayInverse);
+// let array = ["EPICODE", "is", "great", "Maurizio","Sara", 15, "Javascript"];
+// let arrayInverse = [];
+
+// console.log(array);
+
+// for (let i=0; i <= array.length; i++){
+  
+//   if( i !== 0 ){ 
+//     let element = array[ array.length-i ];
+
+//     arrayInverse.push( element );
+//   }
+// }
+
+
+// console.log(arrayInverse);
 
 /* ESERCIZIO 11
   Scrivi del codice per estrarre il massimo valore numerico da un array.
 */
+
+// let array = [12,123,3,45,79,180, 18];
+// console.log(array);
+// let maxValue = 0;
+
+// for (let element of array) {
+//   if(element > maxValue) maxValue=element;
+// }
+
+// console.log("Il valore più grande è:  ", maxValue);
+
+
+
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
@@ -318,9 +339,36 @@ const movies = [
   Scrivi del codice per trovare il film più vecchio nell'array fornito.
 */
 
+
+// let oldYearFilm = 0;
+
+
+// for (let i=0; i<movies.length; i++) {
+//   let yearFilm = parseInt(movies[i].Year);
+//   if(oldYearFilm < yearFilm)oldYearFilm = yearFilm;
+// }
+
+
+// console.log(oldYearFilm);
+
+
+
+
 /* ESERCIZIO 13
   Scrivi del codice per ottenere il numero di film contenuti nell'array fornito.
 */
+
+
+
+let numberOfFilm = 0;
+let i=0; 
+
+while(i<movies.length){
+  if(movies[i].Type==="movie")numberOfFilm++;
+  i++;
+}
+
+console.log(numberOfFilm);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array con solamente i titoli dei film contenuti nell'array fornito.
