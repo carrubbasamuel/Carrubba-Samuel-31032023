@@ -343,13 +343,13 @@ const movies = [
 // let oldYearFilm = 0;
 
 
-// for (let i=0; i<movies.length; i++) {
+//  for (let i=0; i<movies.length; i++) {
 //   let yearFilm = parseInt(movies[i].Year);
 //   if(oldYearFilm < yearFilm)oldYearFilm = yearFilm;
-// }
+//  }
 
 
-// console.log(oldYearFilm);
+//  console.log(oldYearFilm);
 
 
 
@@ -360,33 +360,82 @@ const movies = [
 
 
 
-let numberOfFilm = 0;
-let i=0; 
+// let numberOfFilm = 0;
+// let i=0; 
 
-while(i<movies.length){
-  if(movies[i].Type==="movie")numberOfFilm++;
-  i++;
-}
+// while(i<movies.length){
+//   if(movies[i].Type==="movie")numberOfFilm++;
+//   i++;
+// }
 
-console.log(numberOfFilm);
+// console.log(numberOfFilm);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
 
+// let array = [];
+
+// for(let i=0; i < movies.length; i++){
+//   let name = movies[i].Title;
+//   array.push(name);
+// }
+
+// console.log(array);
+
 /* ESERCIZIO 15
   Scrivi del codice per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
+// let array = [];
+
+// for (let i=0; i<movies.length; i++) {
+//   if(parseInt(movies[i].Year) > 2000){
+//     array.push({
+//       Title: movies[i].Title,
+//       Year: movies[i].Year
+//     });
+//   }
+// }
+
+
+// console.log(array);
+
 
 /* ESERCIZIO 16
   Scrivi del codice per ottenere dall'array fornito il film con il seguente id.
 */
-const id = 'tt0355702'
+
+
+// const id = 'tt0355702'
+
+// for(let i=0; i< movies.length; i++){
+//   if(movies[i].imdbID===id)console.log(movies[i]);
+// }
+
+
+
 
 /* ESERCIZIO 17
   Scrivi del codice per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
 
+// let yearAdd = 0;
+// for(let i=0; i<movies.length; i++){
+//   yearAdd += parseInt(movies[i].Year);
+// }
+
+// console.log(yearAdd);
+
 /* ESERCIZIO 18
   Scrivi del codice per recuperare tutti i film dall'array fornito che contengono una parola fornita.
 */
+// let array = [];
+
+// for(let i=0; i<movies.length; i++){
+  
+//   if(movies[i].Title.includes(':'))array.push(movies[i].Title);
+
+// }
+
+
+// console.log(array);
