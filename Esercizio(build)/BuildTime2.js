@@ -71,23 +71,19 @@ let cartArrayAmy = [
   sarà la somma totale scontata più il costo di spedizione.------------------ */
 
 
-function costOfTotalShipping(user, cartArray , shippingCost) {
+function costOfTotalShipping(user, cartArray , shippingCost) {//Dichiariamo una funzione che richiede i seguenti parametri ovvero l'user il carrello e il costo di spedizione
   let total =0;
+  let scount = 0;
 
-  for(let i=0; i<cartArray.length; i++){
+  for(let i=0; i<cartArray.length; i++){//Sommiamo tutti gli elementi nel carrello
     total += cartArray[i];
   }
-
-  let scount = 0;
-  
-  if (user.isAmbassador)scount = total * 0.3;
-
-  total -= scount;
-
-  if (total > 100) shippingCost = 0;
-
-
-  return parseFloat(total.toFixed(2)) + parseFloat(shippingCost.toFixed(2));
+  if (user.isAmbassador)scount = total * 0.3;// Verifichiamo se l'user è un ambasciatore; Se true viene applicato uno sconto del 30%
+  if (total > 100) {//Verifichiamo se il totale supera i 100; Se true viene applicata una promo free shipping
+    shippingCost = 0;
+    total -= scount;
+  }
+  return parseFloat(total.toFixed(2)) + shippingCost;//Ritorniamo come valori dalla funzione il valore con virgola mobile del totale sul carrello con relative promo/sconti e il costo di spedizione
 }
 
 /*-------------------consol.log() dei relativi carrelli con applicati i vantaggi dello sconto e spedizione gratuita ove necessario---------------------*/
