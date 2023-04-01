@@ -64,11 +64,7 @@ let cartArrayAmy = [
 ];
 
 
-/*---------------Questa funzione calcola il costo totale della spedizione per un utente dato,
-  sulla base di un carrello di acquisti e di un costo di spedizione. La funzione inizierà calcolando la somma
-  dei prezzi degli elementi nel carrello. Se l'utente è un ambasciatore, calcolerà il 30% di sconto sulla somma totale e sottrarrà lo sconto. 
-  Se la somma finale è superiore a 100,la spedizione sarà gratuita. Infine, il costo totale della spedizione
-  sarà la somma totale scontata più il costo di spedizione.------------------ */
+
 
 
 function costOfTotalShipping(user, cartArray , shippingCost) {//Dichiariamo una funzione che richiede i seguenti parametri ovvero l'user il carrello e il costo di spedizione
