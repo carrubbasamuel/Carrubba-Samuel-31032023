@@ -41,7 +41,7 @@ const shippingCost = 50;
 let cartArrayMarco = [
   prices[parseInt(Math.random()*prices.length-1)], 
   prices[parseInt(Math.random()*prices.length-1)],
-  prices[parseInt(Math.random()*prices.length-1)]
+  prices[parseInt(Math.random()*prices.length-1)],
 ];
 
 
@@ -51,7 +51,9 @@ let cartArrayMarco = [
 let cartArrayPaul = [
   prices[parseInt(Math.random()*prices.length-1)], 
   prices[parseInt(Math.random()*prices.length-1)],
-  prices[parseInt(Math.random()*prices.length-1)]
+  prices[parseInt(Math.random()*prices.length-1)], 
+  prices[parseInt(Math.random()*prices.length-1)],
+  prices[parseInt(Math.random()*prices.length-1)], 
 ];
 
 
@@ -60,7 +62,6 @@ let cartArrayPaul = [
 
 let cartArrayAmy = [
   prices[parseInt(Math.random()*prices.length-1)], 
-  prices[parseInt(Math.random()*prices.length-1)]
 ];
 
 
